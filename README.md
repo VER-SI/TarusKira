@@ -1,22 +1,25 @@
 # TarusKira
 
-A mobile web application designed for market vendors to manage inventory, track transactions, and view sales statistics. Built with a Laravel backend and a React & TypeScript frontend.
+A mobile web application designed for market vendors to manage inventory, track transactions, and view sales statistics. Built as an independent personal project outside of school, utilizing a React & TypeScript frontend with a Laravel application structure.
+
+> ⚠️ **Note:** This repository currently features the **frontend interface prototype** using local mock data. Backend database functionality and persistent database connections are not yet integrated.
+
+---
 
 ## Features
 
-* 📦 **Inventory Management:** Track stock levels, product details, and vendor inventory items.
-* 💳 **Transaction Tracking:** Record and monitor sales transactions easily.
-* 📊 **Sales Statistics:** View real-time sales insights and performance statistics.
+- 📦 **Inventory Management:** View stock levels, product details, and vendor inventory layouts.
+- 💳 **Transaction Tracking:** Mock interfaces for recording and monitoring sales transactions easily.
+- 📊 **Sales Statistics:** Visualized sales insights and performance statistics with sample data.
 
 ---
 
 ## Getting Started
 
 ### Prerequisites
-* PHP (>= 8.2 recommended)
-* Composer
-* Node.js & npm
-* MySQL or PostgreSQL
+- Node.js & npm
+- PHP (>= 8.2 recommended)
+- Composer
 
 ### Installation
 
@@ -36,16 +39,21 @@ A mobile web application designed for market vendors to manage inventory, track 
 5. Generate the application key:
    php artisan key:generate
 
-6. Configure your database settings inside the `.env` file (DB_DATABASE, DB_USERNAME, DB_PASSWORD), then run migrations:
-   php artisan migrate
-
-7. Start the development servers:
-   - For backend: php artisan serve
-   - For frontend/assets: npm run dev
+6. Start the development servers:
+   - For backend/routing: php artisan serve
+   - For frontend assets & UI: npm run dev
 
 ---
 
 ## Built With
-* **Backend:** Laravel, PHP
-* **Frontend:** React, TypeScript
-* **Database:** MySQL
+
+- **Frontend:** React, TypeScript, Tailwind CSS
+- **Backend Framework:** Laravel (PHP)
+
+---
+
+## What I Learned
+
+- **Mobile-First Responsive Design:** Having typically designed for larger laptop screens, this project challenged me to adapt my UI layout strategies specifically for compact mobile viewports, focusing on touch targets and screen real estate.
+- **Independent Project Scoping:** Building this outside of school allowed me to self-direct product decisions, prioritize frontend user flow, and design specifically for market vendor usability.
+- **Frontend State & Mocking:** Structuring interface components to accept mock vendor datasets before integrating live database tables.
